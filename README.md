@@ -1,73 +1,83 @@
-# Welcome to your Lovable project
+# Christina Salloum | Interior Architecture Portfolio
 
-## Project info
+![Portfolio Banner](public/images/logoT.png)
 
-**URL**: https://lovable.dev/projects/c7729f53-bd7a-433a-9b5f-73f58fed8574
+A modern, elegant portfolio website showcasing the interior architecture and design work of Christina Salloum. This portfolio features a minimalist aesthetic with vintage paper textures and decorative elements that complement the sophisticated design projects.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Responsive Design**: Fully responsive layout that adapts to all screen sizes
+- **Animated UI**: Smooth animations powered by Framer Motion
+- **Interactive Portfolio**: Filterable portfolio gallery with categories
+- **Downloadable Project PDFs**: Detailed project information available as downloadable PDFs
+- **Contact Form**: Integrated contact form for potential clients to reach out
+- **Elegant Aesthetics**: Vintage-inspired design elements with modern functionality
 
-**Use Lovable**
+## Project Sections
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c7729f53-bd7a-433a-9b5f-73f58fed8574) and start prompting.
+- **Hero Section**: Introduction with professional backdrop
+- **About Section**: Professional biography and qualifications
+- **Portfolio Section**: Showcasing interior architecture projects
+  - Architectural Designs
+  - Branding
+  - Canva Work
+- **Skills Section**: Highlighting technical and design capabilities
+- **Contact Section**: Contact information and inquiry form
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technologies Used
 
-**Use your preferred IDE**
+- React
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- shadcn/ui components
+- Vite
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+- Node.js (v16+)
+- npm or yarn
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Installation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+# Clone the repository
+git clone https://github.com/your-username/TinaSalloum-PersonalPortfolio.git
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Navigate to project directory
+cd christina-salloum-portfolio
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The site is optimized for deployment on platforms like Vercel, Netlify, or GitHub Pages.
 
-**Use GitHub Codespaces**
+```bash
+# Build for production
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Customization
 
-## What technologies are used for this project?
+The portfolio is designed to be easily customizable:
 
-This project is built with:
+- **Colors**: Edit the color variables in `src/index.css`
+- **Images**: Replace images in the `public/images/` directory
+- **Content**: Update project information in respective component files
+- **PDFs**: Add project PDFs to the `public/pdfs/` directory
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## License
 
-## How can I deploy this project?
+All rights reserved. This project and its contents are not licensed for reuse without permission.
 
-Simply open [Lovable](https://lovable.dev/projects/c7729f53-bd7a-433a-9b5f-73f58fed8574) and click on Share -> Publish.
+## Contact
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Joe Ward - [joewrdd@gmail.com](mailto:joewrdd@gmail.com)
