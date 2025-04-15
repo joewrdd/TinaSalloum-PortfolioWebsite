@@ -1,0 +1,190 @@
+/* Import Google Fonts instead of using @fontsource */
+@import url("https://fonts.googleapis.com/css2?family=Baskerville:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base theme colors */
+    --background: 43 54% 86%; /* #EADDCA soft beige */
+    --foreground: 25 32% 33%; /* #6F4E37 rich coffee brown */
+
+    --card: 43 54% 86%;
+    --card-foreground: 25 32% 33%;
+
+    --popover: 43 54% 86%;
+    --popover-foreground: 25 32% 33%;
+
+    --primary: 25 32% 33%; /* #6F4E37 rich coffee brown */
+    --primary-foreground: 43 54% 86%; /* #EADDCA soft beige */
+
+    --secondary: 30 30% 96%;
+    --secondary-foreground: 25 32% 33%;
+
+    --muted: 30 30% 96%;
+    --muted-foreground: 25 38% 45%;
+
+    --accent: 30 50% 92%;
+    --accent-foreground: 25 32% 33%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 43 54% 86%;
+
+    --border: 30 30% 90%;
+    --input: 30 30% 90%;
+    --ring: 25 32% 33%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* ... keep existing code */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Baskerville", "Cormorant Garamond", serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Baskerville", "Cormorant Garamond", serif;
+    font-weight: 600;
+  }
+
+  p,
+  a,
+  button,
+  input,
+  textarea,
+  span,
+  div {
+    font-family: "Baskerville", serif;
+  }
+
+  /* Decorative elements */
+  .scroll-banner {
+    @apply relative flex items-center justify-center;
+    background-image: url("/images/d55cfb5a-aaf9-405a-bbc1-62e388970a26.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80px;
+    padding: 0 60px;
+  }
+
+  .torn-paper-overlay {
+    position: relative;
+  }
+
+  .torn-paper-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/images/d562b89c-d421-4f69-9a2a-a76452d8db41.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .vintage-book {
+    background-image: url("/images/4b506e12-2292-4355-8be9-3a95a1078b64.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .decorative-rose {
+    background-image: url("/images/1c0aa0a0-b84f-4c9a-b462-8b5657e6f9d7.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .decorative-butterfly {
+    background-image: url("/images/1210db25-4c5a-45bb-ba8c-4dbfd98b5db4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Animation for decorative elements */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes image-glow {
+    0% {
+      box-shadow: 0 0 15px rgba(111, 78, 55, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(111, 78, 55, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 15px rgba(111, 78, 55, 0.2);
+    }
+  }
+
+  .animate-image-glow {
+    animation: image-glow 4s infinite;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply relative font-baskerville text-3xl md:text-4xl font-bold text-foreground mb-8;
+  }
+
+  .decorative-underline {
+    @apply relative;
+  }
+
+  .decorative-underline::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background-color: hsl(var(--primary));
+  }
+}
