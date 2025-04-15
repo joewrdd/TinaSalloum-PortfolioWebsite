@@ -29,7 +29,7 @@ const PortfolioSection = () => {
       title: "Custom Birthday Canva Design",
       category: "Canva Work",
       image: "/images/pro3.png",
-      pdfUrl: "/pdfs/png2pdf.pdf",
+      pdfUrl: "/pdfs/PRESENTATION 1  TP RESENT.pdf",
       description:
         "A comprehensive birthday package design created in Canva including thank you cards, invitation cards, food holder papers for bottles and food boxes, and custom stickers for the children.",
     },
